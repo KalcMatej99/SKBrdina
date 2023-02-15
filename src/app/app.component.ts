@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { NgbdModalBasic } from "./skupno/komponente/modal/modal.component"
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'skbrdina';
+  
 }
