@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+<nav class="navbar navbar-main navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
     <div class="container">
         <a class="navbar-brand" routerLink="/">
             <img class="img-fluid rounded m-auto" [src]="'assets/logo_mini.webp'" alt="..." />
@@ -12,22 +12,32 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
 
-                <li routerLink="/tecaji" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tečaji</li>
-                <li routerLink="/tekmovalna" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tekmovalna Ekipa</li>
-                <li routerLink="/dejavnosti" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Dejavnosti</li>
-                <li *ngIf="language != 0" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
-                    (click)="change_language(0)">SLO
-                    🇸🇮
-                </li>
+                <li *ngIf="language == 0" routerLink="/tecaji"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tečaji</li>
+                <li *ngIf="language == 0" routerLink="/tekmovalna"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tekmovalna dejavnost</li>
+                <li *ngIf="language == 0" routerLink="/dejavnosti"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Dejavnosti</li>
                 <li *ngIf="language == 0" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(1)">ITA
                     🇮🇹</li>
+                <li *ngIf="language == 1" routerLink="/tecaji"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Corsi</li>
+                <li *ngIf="language == 1" routerLink="/tekmovalna"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Agonismo</li>
+                <li *ngIf="language == 1" routerLink="/dejavnosti"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Attività</li>
+                <li *ngIf="language == 1" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
+                    (click)="change_language(0)">SLO 🇸🇮
+                </li>
+
+
             </ul>
         </div>
     </div>
 </nav>
 
-<router-outlet></router-outlet>
+<router-outlet style="margin-top: 40px;"></router-outlet>
 
 
 <footer class="footer text-center">
