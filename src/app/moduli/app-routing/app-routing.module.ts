@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TecajiComponent } from './../../skupno/komponente/tecaji/tecaji.component';
 import { GlavnaComponent } from './../../skupno/komponente/glavna/glavna.component';
 import { TekmovalnaComponent } from './../../skupno/komponente/tekmovalna/tekmovalna.component';
+import { DejavnostiComponent } from './../../skupno/komponente/dejavnosti/dejavnosti.component';
 
 const routes: Routes = [{
   path: 'tecaji',
@@ -15,6 +16,9 @@ const routes: Routes = [{
 }, {
   path: 'tekmovalna',
   component: TekmovalnaComponent
+}, {
+  path: 'dejavnosti',
+  component: DejavnostiComponent
 }];
 
 @NgModule({
