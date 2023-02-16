@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class PovezavaService {
   public jePovezava: boolean = false;
   constructor() {
-    merge<boolean>(
+    merge(
       fromEvent(window, 'offline').pipe(map(() => false)),
       fromEvent(window, 'online').pipe(map(() => true)),
       new Observable((sub: Observer<boolean>) => {

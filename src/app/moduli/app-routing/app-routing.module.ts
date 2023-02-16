@@ -2,11 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RouterModule, Routes } from '@angular/router';
-import { TecajiComponent } from './tecaji/tecaji.component';
+import { TecajiComponent } from './../../skupno/komponente/tecaji/tecaji.component';
+import { GlavnaComponent } from './../../skupno/komponente/glavna/glavna.component';
+import { TekmovalnaComponent } from './../../skupno/komponente/tekmovalna/tekmovalna.component';
 
 const routes: Routes = [{
   path: 'tecaji',
   component: TecajiComponent
+}, {
+  path: '',
+  component: GlavnaComponent
+}, {
+  path: 'tekmovalna',
+  component: TekmovalnaComponent
 }];
 
 @NgModule({

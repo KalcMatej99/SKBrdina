@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
 import { PovezavaService } from '../../storitve/povezava.service';
+import { NgbdModalBasic } from './../modal/modal.component'
 import { Router } from '@angular/router';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-ogrodje',
   templateUrl: './ogrodje.component.html',
   styleUrls: ['./ogrodje.component.css'],
 })
-export class OgrodjeComponent implements OnInit {
+export class OgrodjeComponent {
   constructor(
     private povezavaStoritev: PovezavaService,
     private router: Router,
