@@ -18,6 +18,8 @@
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tekmovalna dejavnost</li>
                 <li *ngIf="language == 0" routerLink="/dejavnosti"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Dejavnosti</li>
+                <li *ngIf="language == 0" routerLink="/about"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Kdo smo</li>
                 <li *ngIf="language == 0" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(1)">ITA
                     🇮🇹</li>
@@ -27,6 +29,8 @@
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Agonismo</li>
                 <li *ngIf="language == 1" routerLink="/dejavnosti"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Attività</li>
+                <li *ngIf="language == 1" routerLink="/about"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Chi siamo</li>
                 <li *ngIf="language == 1" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(0)">SLO 🇸🇮
                 </li>
@@ -45,11 +49,12 @@
         <div class="row">
             <!-- Footer Location-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">{{location_title[language]}}</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://goo.gl/maps/PJKeJSFLxVwNv26d6"><i
-                        class="fa-solid fa-map-location-dot"></i></a>
+                <h4 class="text-uppercase mb-4">{{contact_title[language]}}</h4>
                 <p class="lead mb-0">
-                    {{location[language]}}
+                    <i class="fa-solid fa-envelope"></i> info@brdina.org
+                </p>
+                <p class="lead mb-0">
+                    <i class="fa-solid fa-phone"></i> 
                 </p>
 
             </div>

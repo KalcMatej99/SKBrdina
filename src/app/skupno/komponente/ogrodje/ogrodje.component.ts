@@ -26,6 +26,8 @@ export class OgrodjeComponent {
 
   description_button = ["Opis", "Info", "Info", "Info"]
 
+  contact_title = ["Kontakt", "Contatto", "Contact", "Kontakt"]
+
   location_title = ["Kje smo?", "Dove siamo?", "Where are we?", "Wo sind wir?"]
   location = ["Obelisk, Opčine", "Obelisco, Opicina", "Repen, n. 20", "Repen, N. 20"]
 

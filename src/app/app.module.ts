@@ -10,7 +10,8 @@ import { TecajiComponent } from './skupno/komponente/tecaji/tecaji.component';
 import { OgrodjeComponent } from './skupno/komponente/ogrodje/ogrodje.component';
 import { GlavnaComponent } from './skupno/komponente/glavna/glavna.component';
 import { TekmovalnaComponent } from './skupno/komponente/tekmovalna/tekmovalna.component';
-import { DejavnostiComponent } from './skupno/komponente/dejavnosti/dejavnosti.component'
+import { DejavnostiComponent } from './skupno/komponente/dejavnosti/dejavnosti.component';
+import { AboutComponent } from './skupno/komponente/about/about.component'
 @NgModule({
   declarations: [
     NgbdModalBasic,
@@ -19,7 +20,8 @@ import { DejavnostiComponent } from './skupno/komponente/dejavnosti/dejavnosti.c
     OgrodjeComponent,
     GlavnaComponent,
     TekmovalnaComponent,
-    DejavnostiComponent
+    DejavnostiComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

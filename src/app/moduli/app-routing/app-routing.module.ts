@@ -6,6 +6,7 @@ import { TecajiComponent } from './../../skupno/komponente/tecaji/tecaji.compone
 import { GlavnaComponent } from './../../skupno/komponente/glavna/glavna.component';
 import { TekmovalnaComponent } from './../../skupno/komponente/tekmovalna/tekmovalna.component';
 import { DejavnostiComponent } from './../../skupno/komponente/dejavnosti/dejavnosti.component';
+import { AboutComponent } from './../../skupno/komponente/about/about.component';
 
 const routes: Routes = [{
   path: 'tecaji',
@@ -19,6 +20,9 @@ const routes: Routes = [{
 }, {
   path: 'dejavnosti',
   component: DejavnostiComponent
+}, {
+  path: 'about',
+  component: AboutComponent
 }];
 
 @NgModule({
