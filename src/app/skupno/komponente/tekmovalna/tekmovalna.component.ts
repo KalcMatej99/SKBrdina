@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TekmovalnaComponent {
 
+  slikeTekmovalna = ["./../../../../assets/brdina_tecaji.jpg","./../../../../assets/brdina_tecaji.jpg","./../../../../assets/brdina_tecaji.jpg","./../../../../assets/brdina_tecaji.jpg","./../../../../assets/brdina_tecaji.jpg"]
+
 }
