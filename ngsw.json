@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676474892539,
+  "timestamp": 1676846902704,
   "index": "brdina.org/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "brdina.org/favicon.ico",
         "brdina.org/index.html",
-        "brdina.org/main.92732d4831161072.js",
+        "brdina.org/main.8335c3aaf2e560db.js",
         "brdina.org/manifest.webmanifest",
         "brdina.org/polyfills.7b566f7150b16a05.js",
         "brdina.org/runtime.2f2152958e829855.js",
@@ -29,6 +29,10 @@
         "ignoreVary": true
       },
       "urls": [
+        "brdina.org/assets/Brdina_gasilska.jpg",
+        "brdina.org/assets/Brdina_smucarski_tecaj-3924655325.jpg",
+        "brdina.org/assets/barkolana.jpg",
+        "brdina.org/assets/brdina_tecaji.jpg",
         "brdina.org/assets/icons/icon-128x128.png",
         "brdina.org/assets/icons/icon-144x144.png",
         "brdina.org/assets/icons/icon-152x152.png",
@@ -37,14 +41,21 @@
         "brdina.org/assets/icons/icon-512x512.png",
         "brdina.org/assets/icons/icon-72x72.png",
         "brdina.org/assets/icons/icon-96x96.png",
+        "brdina.org/assets/kraska_ohcet.jpg",
         "brdina.org/assets/logo.webp",
-        "brdina.org/assets/logo_mini.webp"
+        "brdina.org/assets/logo_mini.webp",
+        "brdina.org/assets/pust.jpg",
+        "brdina.org/assets/superbaby.jpg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
+    "brdina.org/assets/Brdina_gasilska.jpg": "b72728a5366ae8dd75771568b32efaa3376e4048",
+    "brdina.org/assets/Brdina_smucarski_tecaj-3924655325.jpg": "0447568f19e30b576b0424bece9bdc31bd835694",
+    "brdina.org/assets/barkolana.jpg": "ffab7f447277358541a45cbf70da9656f8032d5a",
+    "brdina.org/assets/brdina_tecaji.jpg": "b72728a5366ae8dd75771568b32efaa3376e4048",
     "brdina.org/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "brdina.org/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "brdina.org/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -53,11 +64,14 @@
     "brdina.org/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "brdina.org/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "brdina.org/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "brdina.org/assets/kraska_ohcet.jpg": "7a08a559fcb9a9c71d7782e0b0ab1883f6233395",
     "brdina.org/assets/logo.webp": "45017f2c8c6f42377e539f5805b63ef4917b5531",
     "brdina.org/assets/logo_mini.webp": "cee9c3d28f94e077407fde1352e350e8fcbda562",
-    "brdina.org/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "brdina.org/index.html": "10af04f5ea9d259be90ec03745cbbede5b35450b",
-    "brdina.org/main.92732d4831161072.js": "410da6333b4bbc9423104959e6d12d7371cf9628",
+    "brdina.org/assets/pust.jpg": "d16a72a7e2d4d07562af6be9abf35c36c9dfc05e",
+    "brdina.org/assets/superbaby.jpg": "643c56ca385945aa5f5ca5140e27a1ded464814c",
+    "brdina.org/favicon.ico": "41033a236dd6689d4933d42e1a02b054e2c42b58",
+    "brdina.org/index.html": "12d8e3e0a60fa2c307b84894187f50493b367dea",
+    "brdina.org/main.8335c3aaf2e560db.js": "9afe63271d1d293800f8abbedb14531f60d63b90",
     "brdina.org/manifest.webmanifest": "e778f0682b284c3f20fe2f36e582d148234f940e",
     "brdina.org/polyfills.7b566f7150b16a05.js": "cd62dc12dc245371f1fc7269151098feeb26854a",
     "brdina.org/runtime.2f2152958e829855.js": "454ccb773b90b41a5f1a4590661f6feacd251207",
