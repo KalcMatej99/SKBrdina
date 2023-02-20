@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676912920382,
+  "timestamp": 1676913464130,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.d3daed88ea5ec461.js",
+        "/main.0dc581150374a9d6.js",
         "/manifest.webmanifest",
         "/polyfills.7b566f7150b16a05.js",
         "/runtime.2f2152958e829855.js",
@@ -152,8 +152,8 @@
     "/assets/tekmovalna/8.jpg": "7bf901b9f8d592e662d734021082885bf9bcadca",
     "/assets/tekmovalna/9.jpg": "c90696dd45d8438dabc2c207944455e404f4a82c",
     "/favicon.ico": "41033a236dd6689d4933d42e1a02b054e2c42b58",
-    "/index.html": "1c9017a325d796c5d87a1131c91b5a6184c2a6c4",
-    "/main.d3daed88ea5ec461.js": "20d96173b28e42ec4f1f9a644db6365d616ee318",
+    "/index.html": "6a99dfab9b9c162fbbcc75e7ac7ebd77858e85aa",
+    "/main.0dc581150374a9d6.js": "441d4e3429c3b17a1dc980ef0a80b71f4e1fd0aa",
     "/manifest.webmanifest": "e778f0682b284c3f20fe2f36e582d148234f940e",
     "/polyfills.7b566f7150b16a05.js": "cd62dc12dc245371f1fc7269151098feeb26854a",
     "/runtime.2f2152958e829855.js": "454ccb773b90b41a5f1a4590661f6feacd251207",
