@@ -1,5 +1,5 @@
 import { PovezavaService } from '../../storitve/povezava.service';
-import { NgbdModalBasic } from './../modal/modal.component'
+import { UserService } from '../../storitve/user.service';
 import { Router } from '@angular/router';
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 
@@ -11,7 +11,7 @@ import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild }
 export class OgrodjeComponent {
   constructor(
     private povezavaStoritev: PovezavaService,
-    private router: Router,
+    public userStoritev: UserService,
   ) {}
 
   title = 'skbrdina';
@@ -38,8 +38,8 @@ export class OgrodjeComponent {
   @ViewChild('toggler') navbarToggler!: ElementRef;
 
   public change_language = (index_language: number): void => {
-    this.language = index_language;
     this.navbarToggler!.nativeElement.click()
+    this.userStoritev.change_language(index_language)
   }
 
   public close_navbar = (): void => {

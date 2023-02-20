@@ -1,9 +1,8 @@
 <main>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-10 p-lg-10 mx-auto my-10">
-            <h1 class="display-4 font-weight-normal">Tekmovalna dejavnost</h1>
-            <p class="lead font-weight-normal">Tekmovalna dejavnost smučarskega društva Brdina je namenjena otrokom od 5
-                do 16 let. Tekmovalne ekipe so tri: Ekipa superbaby, Ekipa baby/miški in Ekipa Soft.</p>
+            <h1 class="display-4 font-weight-normal">{{titles[userStoritev.language]}}</h1>
+            <p class="lead font-weight-normal">{{description[userStoritev.language]}}</p>
         </div>
 
 
@@ -13,36 +12,45 @@
                     <img class="card-img-top" src="./../../../../assets/superbaby.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Superbaby</h5>
-                        <p class="card-text">Ekipa superbaby vklučuje otroke stare med 5 in 7 let. Cilj ekipe je učenje
-                            tehnike smučanja in udeležba na tekme FISI in promocijske tekme.</p>
-                        <a href="https://drive.google.com/file/d/1UZm_nZxb86gaJqgYqymvqkD4rDSwf590/view"
+                        <p class="card-text">{{descriptionSuperBaby[userStoritev.language]}}</p>
+                        <a *ngIf="userStoritev.language == 0"
+                            href="https://drive.google.com/file/d/1UZm_nZxb86gaJqgYqymvqkD4rDSwf590/view"
                             class="btn btn-primary">Odpri Ponudbo</a>
+                        <a *ngIf="userStoritev.language == 1"
+                            href="https://drive.google.com/file/d/1UZm_nZxb86gaJqgYqymvqkD4rDSwf590/view"
+                            class="btn btn-primary">Apri</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
-                    <img class="card-img-top" src="./../../../../assets/superbaby.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="./../../../../assets/baby_miski.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Baby/Miški</h5>
-                        <p class="card-text">Ekipa Baby/Miški je sestavljena iz tekmovalcev stare med 7 in 11 letom.
-                            Cilj ekipe je vrhunsko smučanje in tekmovanje.</p>
-                        <a href="https://drive.google.com/file/d/1UZm_nZxb86gaJqgYqymvqkD4rDSwf590/view"
+                        <h5 class="card-title">{{titleBabyMiski[userStoritev.language]}}</h5>
+                        <p class="card-text">{{descriptionBabyMiski[userStoritev.language]}}</p>
+                        <a *ngIf="userStoritev.language == 0"
+                            href="https://drive.google.com/file/d/1UZm_nZxb86gaJqgYqymvqkD4rDSwf590/view"
                             class="btn btn-primary">Odpri Ponudbo</a>
+                        <a *ngIf="userStoritev.language == 1"
+                            href="https://drive.google.com/file/d/1UZm_nZxb86gaJqgYqymvqkD4rDSwf590/view"
+                            class="btn btn-primary">Apri</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
-                    <img class="card-img-top" src="./../../../../assets/superbaby.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="./../../../../assets/soft.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Soft</h5>
-                        <p class="card-text">V programu Soft se bodo otroci stari od 12. leta dalje zabavali na snegu.
-                            Skupina se bo udeležila promocijskih tekem.</p>
-                        <a href="https://drive.google.com/file/d/18JQjRa_jtFuHKkr5SlFpYg0gJJh7KOMI/view?usp=share_link"
+                        <p class="card-text">{{descriptionSoft[userStoritev.language]}}</p>
+                        <a *ngIf="userStoritev.language == 0"
+                            href="https://drive.google.com/file/d/18JQjRa_jtFuHKkr5SlFpYg0gJJh7KOMI/view?usp=share_link"
                             class="btn btn-primary">Odpri Ponudbo</a>
+                        <a *ngIf="userStoritev.language == 1"
+                            href="https://drive.google.com/file/d/18JQjRa_jtFuHKkr5SlFpYg0gJJh7KOMI/view?usp=share_link"
+                            class="btn btn-primary">Apri</a>
 
                     </div>
                 </div>
@@ -50,8 +58,9 @@
         </div>
 
         <div class="row">
-            <h6 class="display-6 font-weight-normal">Fotogalerija</h6>
-            <div class="col-md-4" *ngFor="let slikaTecaj of slikeTekmovalna">
+            <h6 *ngIf="userStoritev.language == 0" class="display-6 font-weight-normal">Fotogalerija</h6>
+            <h6 *ngIf="userStoritev.language == 1" class="display-6 font-weight-normal">Fotogalleria</h6>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2" *ngFor="let slikaTecaj of slikeTekmovalna">
                 <div class="thumbnail">
                     <img src="{{slikaTecaj}}" alt="Lights" style="width:100%; margin-bottom: 10px;">
                 </div>

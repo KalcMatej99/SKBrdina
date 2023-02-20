@@ -12,26 +12,26 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
 
-                <li *ngIf="language == 0" routerLink="/tecaji"
+                <li *ngIf="userStoritev.language == 0" routerLink="/tecaji"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Tečaji</li>
-                <li *ngIf="language == 0" routerLink="/tekmovalna"
+                <li *ngIf="userStoritev.language == 0" routerLink="/tekmovalna"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Tekmovalna dejavnost</li>
-                <li *ngIf="language == 0" routerLink="/dejavnosti"
+                <li *ngIf="userStoritev.language == 0" routerLink="/dejavnosti"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Dejavnosti</li>
-                <li *ngIf="language == 0" routerLink="/about"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Kdo smo</li>
-                <li *ngIf="language == 0" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
+                <!--<li *ngIf="userStoritev.language == 0" routerLink="/about"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Kdo smo</li>-->
+                <li *ngIf="userStoritev.language == 0" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(1)">ITA
                     🇮🇹</li>
-                <li *ngIf="language == 1" routerLink="/tecaji"
+                <li *ngIf="userStoritev.language == 1" routerLink="/tecaji"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Corsi</li>
-                <li *ngIf="language == 1" routerLink="/tekmovalna"
+                <li *ngIf="userStoritev.language == 1" routerLink="/tekmovalna"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Agonismo</li>
-                <li *ngIf="language == 1" routerLink="/dejavnosti"
+                <li *ngIf="userStoritev.language == 1" routerLink="/dejavnosti"
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Attività</li>
-                <li *ngIf="language == 1" routerLink="/about"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Chi siamo</li>
-                <li *ngIf="language == 1" 
+                <!--<li *ngIf="userStoritev.language == 1" routerLink="/about"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Chi siamo</li>-->
+                <li *ngIf="userStoritev.language == 1" 
                     class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(0)">SLO 🇸🇮
                 </li>
@@ -48,7 +48,7 @@
         <div class="row">
             
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">{{contact_title[language]}}</h4>
+                <h4 class="text-uppercase mb-4">{{contact_title[userStoritev.language]}}</h4>
                 <p class="lead mb-0">
                     <i class="fa-solid fa-envelope"></i> info@brdina.org
                 </p>
@@ -59,7 +59,7 @@
             </div>
             
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">{{social_title[language]}}</h4>
+                <h4 class="text-uppercase mb-4">{{social_title[userStoritev.language]}}</h4>
                 <a class="btn btn-outline-light btn-social mx-1"
                     href="https://www.facebook.com/skbrdina/?ref=page_internal"><i
                         class="fab fa-fw fa-facebook-f"></i></a>
@@ -68,7 +68,7 @@
             </div>
             
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">{{opensource_title[language]}}</h4>
+                <h4 class="text-uppercase mb-4">{{opensource_title[userStoritev.language]}}</h4>
                 <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/KalcMatej99/SKBrdina"><i
                         class="fa-brands fa-github"></i></a>
             </div>
