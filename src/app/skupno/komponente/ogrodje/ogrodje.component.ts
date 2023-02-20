@@ -16,10 +16,7 @@ export class OgrodjeComponent {
 
   title = 'skbrdina';
   title_start_message = "SK Brdina"
-  subtitles_start_message = ["SMUČAJ Z BRDINO!", "SCIA COL BRDINA!", "SKI WITH BRDINA!", "SKI MIT BRDINA!"]
-  button_start_message = ["Ogled cenika", "Mostra menu", "Show the menu", "Menü anzeigen"]
 
-  titles = ['Barcolana 2022', "Barcolana 2022", "Barcolana 2022", "Barcolana 2022"];
 
   language = 0
   language_texts = ["SLO 🇸🇮", "ITA 🇮🇹", "ENG 🇺🇸", "DE 🇩🇪"]
