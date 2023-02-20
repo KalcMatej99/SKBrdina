@@ -15,7 +15,7 @@ export class OgrodjeComponent {
   ) {}
 
   title = 'skbrdina';
-  title_start_message = "SK Brdina"
+  title_start_message = "AŠD SK Brdina"
 
 
   language = 0
