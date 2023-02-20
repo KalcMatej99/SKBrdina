@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676911753977,
+  "timestamp": 1676912920382,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -152,7 +152,7 @@
     "/assets/tekmovalna/8.jpg": "7bf901b9f8d592e662d734021082885bf9bcadca",
     "/assets/tekmovalna/9.jpg": "c90696dd45d8438dabc2c207944455e404f4a82c",
     "/favicon.ico": "41033a236dd6689d4933d42e1a02b054e2c42b58",
-    "/index.html": "528f1cac68bcc86330ac52ffd5e68a12075356a0",
+    "/index.html": "1c9017a325d796c5d87a1131c91b5a6184c2a6c4",
     "/main.d3daed88ea5ec461.js": "20d96173b28e42ec4f1f9a644db6365d616ee318",
     "/manifest.webmanifest": "e778f0682b284c3f20fe2f36e582d148234f940e",
     "/polyfills.7b566f7150b16a05.js": "cd62dc12dc245371f1fc7269151098feeb26854a",
