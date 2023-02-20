@@ -4,38 +4,37 @@
             <img class="img-fluid rounded m-auto" [src]="'assets/logo_mini.webp'" alt="..." />
             SK Brdina
         </a>
-        <button #toggler class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+        <button #toggler class="navbar-toggler text-uppercase font-weight-bold text-white rounded"
             type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">
-            {{language_texts[language]}}
+            <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
 
                 <li *ngIf="language == 0" routerLink="/tecaji"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tečaji</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Tečaji</li>
                 <li *ngIf="language == 0" routerLink="/tekmovalna"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Tekmovalna dejavnost</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Tekmovalna dejavnost</li>
                 <li *ngIf="language == 0" routerLink="/dejavnosti"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Dejavnosti</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Dejavnosti</li>
                 <li *ngIf="language == 0" routerLink="/about"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Kdo smo</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Kdo smo</li>
                 <li *ngIf="language == 0" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(1)">ITA
                     🇮🇹</li>
                 <li *ngIf="language == 1" routerLink="/tecaji"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Corsi</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Corsi</li>
                 <li *ngIf="language == 1" routerLink="/tekmovalna"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Agonismo</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Agonismo</li>
                 <li *ngIf="language == 1" routerLink="/dejavnosti"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Attività</li>
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Attività</li>
                 <li *ngIf="language == 1" routerLink="/about"
-                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">Chi siamo</li>
-                <li *ngIf="language == 1" class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded" (click) = "close_navbar()">Chi siamo</li>
+                <li *ngIf="language == 1" 
+                    class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"
                     (click)="change_language(0)">SLO 🇸🇮
                 </li>
-
-
             </ul>
         </div>
     </div>

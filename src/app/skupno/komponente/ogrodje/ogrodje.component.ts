@@ -40,17 +40,12 @@ export class OgrodjeComponent {
   public change_language = (index_language: number): void => {
     this.language = index_language;
     this.navbarToggler!.nativeElement.click()
-    this.openModal();
   }
 
-  @ViewChild('modal') public modalComponent!: NgbdModalBasic;
-  async openModal() {
-    return await this.modalComponent.open();
+  public close_navbar = (): void => {
+    this.navbarToggler!.nativeElement.click()
   }
 
-  ngAfterViewInit(): void {
-    this.openModal();
-  }
 
   public jePovezava(): boolean {
     return this.povezavaStoritev.jePovezava;
