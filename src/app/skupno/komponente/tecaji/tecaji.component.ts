@@ -22,7 +22,7 @@ export class TecajiComponent implements OnInit {
   
   ngOnInit() {
     
-    for(var i = 1; i <= 21; i++) {
+    for(var i = 1; i <= 17; i++) {
       this.slikeTecaji.push("./../../../../assets/tecaji/" + i + ".jpg")
     }
 
