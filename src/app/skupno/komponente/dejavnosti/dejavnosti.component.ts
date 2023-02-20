@@ -12,7 +12,7 @@ export class DejavnostiComponent {
   ) {}
 
   description = ["Smučarski klub Brdina ni prisoten le na snegu ampak tudi v matičnem teritoriju. Vsako leto organiziramo \
-  kioske, izlete in veliko več za naše člane.", "Lo Sci Club Brdina non è presente solo sulla neve ma anche sul territorio di casa. Ogni anno organizziamo chiodi, tour e molto altro per i nostri soci."]
+  kioske, izlete in veliko več za naše člane.", "Lo Sci Club Brdina non è presente solo sulla neve ma anche sul territorio di casa. Ogni anno organizziamo chioschi, escursioni e molto altro per i nostri soci."]
 
   dejavnosti: any[] = [{
     "image": "./../../../../assets/pust.jpg",
@@ -21,7 +21,7 @@ export class DejavnostiComponent {
   }, {
     "image": "./../../../../assets/kraska_ohcet.jpg",
     "title": ["Kraška Ohcet", "Nozze carsiche"],
-    "description": ["Ob vsaki izvedbi kraške ohceti organiziramo kiosk v Repnu, ki je odprt čez celo izvajanje Kraške Ohceti. Naše goste postrežimo s bogato ponudbo kraških tradicionalih pijač in jedač.", "Ogni volta che eseguiamo l'ohceta carsico, organizziamo un chiosco a Repno, che è aperto durante tutta la realizzazione di kraška Ohceti. I nostri ospiti sono serviti con una vasta gamma di bevande e cibi tradizionali carsici."]
+    "description": ["Ob vsaki izvedbi kraške ohceti organiziramo kiosk v Repnu, ki je odprt čez celo izvajanje Kraške Ohceti. Naše goste postrežimo s bogato ponudbo kraških tradicionalih pijač in jedač.", "Per ogni edizione delle nozze carsiche organizziamo un chiosco a Rupingrande, che è aperto durante tutta la realizzazione delle nozze carsiche. I nostri ospiti sono serviti con una vasta gamma di bevande e cibi tradizionali carsici."]
   }, {
     "image": "./../../../../assets/barkolana.jpg",
     "title": ["Barkolana", "Barcolana"],
