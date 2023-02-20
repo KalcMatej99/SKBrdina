@@ -2,9 +2,9 @@
 <div class="image-overlay">
   <img class="main_image" src="./../../../../assets/Brdina_gasilska.jpg" alt="Your Image" />
   <div class="overlay-text bg-text">
-    <h1>Smučaj z Brdino!</h1>
-    <button routerLink="/tecaji" type="button" class="btn btn-primary btn-lg odmik">Tečaji</button>
-    <button routerLink="/tekmovalna" type="button" class="btn btn-primary btn-lg odmik">Tekmovalna ekipa</button>
+    <h1>{{title[userStoritev.language]}}</h1>
+    <button routerLink="/tecaji" type="button" class="btn btn-primary btn-lg odmik">{{title_buttons[userStoritev.language][0]}}</button>
+    <button routerLink="/tekmovalna" type="button" class="btn btn-primary btn-lg odmik">{{title_buttons[userStoritev.language][1]}}</button>
   </div>
 </div>
 
@@ -15,11 +15,10 @@
     <div class="card odmik">
       <img routerLink="/tecaji" class="card-img-top" src="./../../../../assets/brdina_tecaji.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Tečaji</h5>
-        <p class="card-text">Smučarksi klub Brdina organizira v sodelovanju s SPDG smučarske tečaje za otroke stare
-          najmanj tri leta. Cilj smučarskih tečaj je smučanje v varnem okolju, zabava in igra. Brdina ponuja paket pet
-          sobot ali pet nedelj. Tečaji se odvijajo na smučarskem področju Forni di Sopra.</p>
-        <button routerLink="/tecaji" type="button" class="btn btn-primary btn-lg odmik">Odpri</button>
+        <h5 class="card-title">{{title_buttons[userStoritev.language][0]}}</h5>
+        <p class="card-text">{{descriptionTecaji[userStoritev.language]}}</p>
+        <button *ngIf = "userStoritev.language == 0" routerLink="/tecaji" type="button" class="btn btn-primary btn-lg odmik">Odpri</button>
+        <button *ngIf = "userStoritev.language == 1" routerLink="/tecaji" type="button" class="btn btn-primary btn-lg odmik">Apri</button>
 
       </div>
     </div>
@@ -29,10 +28,10 @@
     <div class="card odmik">
       <img routerLink="/tekmovalna" class="card-img-top" src="./../../../../assets/superbaby.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Tekmovalna dejavnost</h5>
-        <p class="card-text">Tekmovalna dejavnost smučarskega društva Brdina je namenjena otrokom od 5 do 16 let.
-          Tekmovalne ekipe so tri: Ekipa superbaby, Ekipa baby/miški in Ekipa Soft.</p>
-        <button routerLink="/tekmovalna" type="button" class="btn btn-primary btn-lg odmik">Odpri</button>
+        <h5 class="card-title">{{title_buttons[userStoritev.language][1]}}</h5>
+        <p class="card-text">{{descriptionTekmovalna[userStoritev.language]}}</p>
+        <button *ngIf = "userStoritev.language == 0" routerLink="/tekmovalna" type="button" class="btn btn-primary btn-lg odmik">Odpri</button>
+        <button *ngIf = "userStoritev.language == 1" routerLink="/tekmovalna" type="button" class="btn btn-primary btn-lg odmik">Apri</button>
       </div>
     </div>
   </div>
@@ -42,10 +41,10 @@
       <img routerLink="/dejavnosti" class="card-img-top" src="./../../../../assets/kraska_ohcet.jpg"
         alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Ostale dejavnosti</h5>
-        <p class="card-text">Smučarski klub Brdina ni prisoten le na snegu ampak tudi v matičnem teritoriju. Vsako
-          leto organiziramo kioske, izlete in veliko več za naše člane.</p>
-        <button routerLink="/dejavnosti" type="button" class="btn btn-primary btn-lg odmik">Odpri</button>
+        <h5 class="card-title">{{cardOstaleDejavnosti[userStoritev.language]}}</h5>
+        <p class="card-text">{{descriptionDejavnosti[userStoritev.language]}}</p>
+        <button *ngIf = "userStoritev.language == 0" routerLink="/dejavnosti" type="button" class="btn btn-primary btn-lg odmik">Odpri</button>
+        <button *ngIf = "userStoritev.language == 1" routerLink="/dejavnosti" type="button" class="btn btn-primary btn-lg odmik">Apri</button>
       </div>
     </div>
   </div>
