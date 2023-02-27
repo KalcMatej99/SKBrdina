@@ -14,9 +14,9 @@ export class TecajiComponent implements OnInit {
 
 
   titles = ['Smučarski tečaji', "Corsi di sci"];
-  description = ['Smučarksi klub Brdina organizira v sodelovanju s SPDG smučarske tečaje za  otroke stare najmanj tri leta. \
-      Cilj smučarskih tečaj je smučanje v varnem okolju, zabava in igra. Brdina ponuja paket pet sobot ali pet nedelj. Tečaji se \
-      odvijajo na smučarskem področju Forni di Sopra.', "Lo sci club Brdina organizza corsi di sci per bambini di almeno tre anni in collaborazione con SPDG. L'obiettivo del corso di sci è sciare in un ambiente sicuro, divertirsi e giocare. Brdina offre un pacchetto di cinque sabati o cinque domeniche. I corsi si svolgono nel comprensorio sciistico di Forni di Sopra."];
+  description = ["Smučarksi klub Brdina organizira v sodelovanju s SPDG smučarske tečaje za  otroke stare najmanj štiri leta. \
+    Cilj smučarskih tečajev je pravilno smučanje v varnem okolju, najmlajšim otrokom približati smučanje in hkrati izkoristiti čas za aktiven družinski izlet. \
+    Brdina ponuja paket petih sobot ali petih nedelj. Tečaji se odvijajo na smučarskem področju Forni di Sopra. Poleg smučarskega znanja nudimo zabavo in igro na snegu.", "Lo sci club Brdina organizza corsi di sci per bambini di almeno tre anni in collaborazione con SPDG. L'obiettivo del corso di sci è sciare in un ambiente sicuro, divertirsi e giocare. Brdina offre un pacchetto di cinque sabati o cinque domeniche. I corsi si svolgono nel comprensorio sciistico di Forni di Sopra."];
 
   slikeTecaji: string[] = []
   
