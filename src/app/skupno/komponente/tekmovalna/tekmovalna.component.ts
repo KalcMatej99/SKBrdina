@@ -31,7 +31,7 @@ export class TekmovalnaComponent {
   ngOnInit() {
     
 
-    for(var i = 1; i <= 15; i++) {
+    for(var i = 1; i <= 20; i++) {
       this.slikeTekmovalna.push("./../../../../assets/tekmovalna/" + i + ".jpg")
     }
 
