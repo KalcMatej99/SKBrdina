@@ -48,4 +48,8 @@ export class OgrodjeComponent {
     return this.povezavaStoritev.jePovezava;
   }
 
+  public showAlert(): void {
+    alert("Safe guarding. Responsabile: Tatjana čač. Email: info@brdina.org. Telefono: +39 342 073 0513");
+  }
+
 }
